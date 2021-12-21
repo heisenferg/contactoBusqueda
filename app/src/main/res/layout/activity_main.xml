@@ -71,8 +71,10 @@
 
     <ListView
         android:id="@+id/lstContactos"
-        android:layout_width="409dp"
-        android:layout_height="270dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+        android:layout_width="404dp"
+        android:layout_height="309dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNombre" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

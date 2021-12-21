@@ -12,7 +12,6 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.provider.Telephony;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -26,7 +25,6 @@ import android.widget.TextView;
 
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemLongClickListener {
     EditText edNombre;
@@ -67,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                     lstContactos=findViewById(R.id.lstContactos);
                     lstContactos.setAdapter(new ArrayAdapter<String>(getApplicationContext(),
-                            R.layout.listview, lista_contactos));
+                            R.layout.fila, lista_contactos));
                 }
                 return true;
             }
